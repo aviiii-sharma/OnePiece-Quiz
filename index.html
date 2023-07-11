@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="main">
+        <!-- Starting -->
+        
+        <div class="img"><img src="./pngwing.com.png" alt="One Piece Logo"></div>
+        
+            <div class="info_box" id="quizStart">
+                <div class="info_title">
+                <h1>Some Rules Before you Start</h1>
+            </div>
+                <div class="info_list">
+                <div class="info">1) No Cheating.</div>
+                <div class="info">3) The quiz contains 5 questions only.</div>
+                <div class="info">2) Only start the quiz if you have watched One Piece.</div>
+                <div class="info" id="last1">4) You can't exit from the quiz while you are playing.</div>                    <div class="info">5) You'll get points on the basis of your correct answers.</div>
+            </div>
+            <footer>
+                <div class="btnDiv" id="start">     
+                <button class="btn" id="begin">Start Quiz</button>
+                </div></footer>
+        </div>
+            
+        <!-- Questions -->
+        <div class="background" id="beforeResult">
+            <div id = "content">
+                <div class="heading">
+                    <h1>One Piece Quiz</h1></div>
+                    <div class="real">
+                    <h2 id="queBox">1) This is a temporary question?</h2>
+                    <div><div class="rowBtn">
+                        <input class="options" type="radio" id="option1" value = "a" name="option">
+                        <label for="option1"> Option 1</label></div>
+                    </div>
+                    <div><div class="rowBtn">
+                        <input class="options" type="radio" id="option2" value = "b" name="option">
+                        <label for="option2"> Option 2</label></div>
+                    </div>
+                    <div><div class="rowBtn">
+                        <input class="options" type="radio" id="option3" value = "c" name="option">
+                        <label for="option3"> Option 3</label></div>
+                    </div>
+                    <div id="last"><div class="rowBtn">
+                        <input class="options" type="radio" id="option4" value = "d" name="option">
+                        <label for="option4"> Option 4</label></div>
+                    </div>
+                </div>
+                    <footer>
+                    <div class="btnDiv">
+                        <span><p id="queNum"></p> Of <p id="queLast"></p> Questions</span>
+                    <button class="btn" id="skipSubmit" onclick="submitQuiz()">Skip</button>
+                    </div></footer>
+            </div>
+        </div>
+
+        <!-- EndResultBox -->
+
+        <div class="endBox" id="afterResult">
+            <span>
+                <div class="head"><h2 id="message"></h2></div>
+                <div class="sub">You scored<p id="scorePts">100</p>Out Of<p id="totalPts">100</p></div>
+                <button class="resetBtn" id="restart">Restart Quiz</button>
+            </span>    
+            <img src="./5.png" alt="luffy">
+        </div>
+    </div>
+
+
+    <script src="app.js" charset="UTF-8"></script>
+</body>
+</html>

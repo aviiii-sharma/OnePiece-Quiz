@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(./WallpaperDog-10727699.jpg) center center;   
+    z-index: -10;
+}
+
+.img {
+    
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 27.5%;
+    animation: fadeIn;
+    animation-duration: 0.2s;
+}
+
+.background, .info_box{ 
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.55);
+    animation: fadeIn;
+    animation-duration: 0.2s;
+}
+
+.info_box {
+    margin: 70px;
+}
+
+#last  {
+    margin-bottom: 0;
+}
+ 
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    font-size: 17px;
+    margin-left: 1.2%;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+
+h2 {
+    overflow:hidden;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.rowBtn {
+   
+    margin-bottom: 0.5rem;
+    margin-left: 0%;
+    width: 100%;
+    background-color: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 13px;
+}
+
+.info {
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.rowBtn:hover{
+	background:#A0D5FF;
+    cursor: pointer;
+} 
+
+#start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#begin {
+    width: 120px;
+}
+
+.btn {
+    margin-right: 30px;
+    border: none;
+    width: 20%;
+    padding: 7px;
+    border : 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    background-color:#007bff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0061E0;
+}
+
+.btnDiv {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    padding: 30px 0px;
+    box-shadow: 0px -1px 1.5px 0px rgba(0,0,0,0.2);
+}
+
+footer span {
+    display: flex;
+    font-size: 1.1rem;
+    margin-left: 30px;
+}
+
+footer span p {
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.heading, .info_title {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    padding: 0px 30px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.real, .info_list {
+    padding: 30px;
+}
+
+#quizStart {
+    display: flex;
+    flex-direction: column;
+}
+
+#beforeResult {
+    display: none;
+}
+
+/* result box */
+
+#afterResult {
+    display: none;
+}
+
+.endBox {
+    animation: fadeIn;
+    animation-duration: 0.2s;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 80%, transparent 80%);
+    margin: 70px;
+    margin-left: 8%;
+}
+
+.endBox::before {
+    content: "";
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  box-shadow: -1px 0 7.5px rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.endBox h2 {
+    font-size: 40px;
+}
+
+.endBox img {
+    height: 400px;
+    z-index: 95;
+}
+
+#last1 {
+    margin-bottom: 0px;
+}
+
+
+.endBox span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 60px;
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.endBox p {
+    padding: 5px;
+}
+
+.resetBtn {
+    margin-right: 30px;
+    border: none;
+    padding: 7px;
+    border : 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    background-color:#007bff;
+    cursor: pointer;
+    margin-top: 5%;
+    width: 50%;
+    cursor: pointer; 
+    z-index: 100;   
+}
+
+.resetBtn:hover {
+    background-color: #0061E0;
+}
+
+
+
+/* media querry for devices below 601px */
+@media (max-width: 600px) {
+    .img {
+        padding: 10px 10px;
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+
+    .img img {
+        width: 50%;
+    }
+
+    .background, .info_box {
+        margin: 50px;
+        width: 80%;
+    }
+
+    .info_title, .heading {
+        padding: 10px 20px;
+    }
+
+    .heading h1, .info_title h1 {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .info_list, .real {
+        padding: 20px;
+    }
+    .btn {
+        font-size: 14px;
+        width: 20px;
+        margin-right: 0px;
+    }
+
+    #queBox {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+    .btnDiv {
+        padding: 20px;
+    }
+    .btnDiv span{
+        font-size: 16px;
+        margin-left: 0px;
+    }
+
+    #skipSubmit {
+        width: 25%;
+    }
+
+    #afterResult {
+        width: 95%;
+        margin-top: 18%;
+        margin-right: 3%;
+    }
+
+    .resetBtn {
+        font-size: 14px;
+        width: 140px;
+        margin-right: 0px;
+    }
+
+    #afterResult .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head h2 {
+        font-size: 18px;
+        margin-left: 4.5%;
+    }
+    .sub {
+        font-size: 13px;
+    }
+    .sub p {
+        padding: 2.5px;
+    }
+
+    .endBox span {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .endBox img {
+        height: 154px;
+    }
+
+    .endBox {
+        border-radius: 5px;
+        
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 80%, transparent 0%);
+    }
+
+    #last {
+        margin-bottom: 0px;
+    }
+}   
+
+/* media querry for devices below 1201px */
+@media (min-width:601px) and (max-width:1201px) {
+    #quizStart {
+        width: 40%;
+    }
+    
+    .info {
+        font-size: 18px;
+    }
+
+    .info_title h1 {
+        font-size: 20px;
+    }
+
+    footer .btn {
+        font-size: 18px;
+    }
+
+    .heading h1{
+        font-size: 20px;
+    }
+
+    #beforeResult {
+        width: 40%;
+        margin-top: 40px;
+    }
+
+    #afterResult {
+        width: 70%;
+    }
+
+    .resetBtn {
+        font-size: 18px;
+        width: 160px;
+    }
+    #afterResult .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px ;
+    }
+    .sub {
+        font-size: 18px;
+    }
+    
+}
